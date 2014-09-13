@@ -121,7 +121,7 @@
     <value>Ange det udda antalet asterisker (max {0}) i diamantens midja: </value>
   </data>
   <data name="Continue_Prompt" xml:space="preserve">
-    <value>Tryck valfri tangent för att fortsätta - Avsluta med Esc</value>
+    <value>Tryck valfri tangent för att fortsätta eller avsluta med Esc</value>
   </data>
   <data name="Error_Message" xml:space="preserve">
     <value>FEL! Det inmatade värdet är inte ett udda heltal mellan 1 och {0}, försök igen!</value>

@@ -70,7 +70,7 @@ namespace _1_2_rita_med_asterisker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tryck valfri tangent för att fortsätta - Avsluta med Esc.
+        ///   Looks up a localized string similar to Tryck valfri tangent för att fortsätta eller avsluta med Esc.
         /// </summary>
         internal static string Continue_Prompt {
             get {

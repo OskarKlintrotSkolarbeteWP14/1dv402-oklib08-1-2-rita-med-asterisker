@@ -17,8 +17,9 @@ namespace _1_2_rita_med_asterisker
             do
             {
                 Console.Clear();
-                ReadOddByte(Strings.Asterisk_Prompt, maxValue);
-                
+                //ReadOddByte(Strings.Asterisk_Prompt, maxValue);
+                RenderDiamond(ReadOddByte(Strings.Asterisk_Prompt, maxValue));
+                Console.Write(Strings.Continue_Prompt);
             } while (IsContinuing());
         }
         private static bool IsContinuing()
@@ -54,11 +55,25 @@ namespace _1_2_rita_med_asterisker
         }
         private static void RenderDiamond(byte maxCount)
         {
-
+            int addOrSub = 1; 
+            int j = 0;
+            for (int i = 0; i + j <= maxCount; i = i + addOrSub)
+            {
+                RenderRow(maxCount - i, i + j);
+                j = i;
+            }
         }
         private static void RenderRow(int maxCount, int asteriskCount)
         {
-
+            for (int i = 0; i < maxCount; i++)
+            {
+                Console.Write(" "); 
+            }
+            for (int i = 0; i < asteriskCount; i++)
+            {
+                Console.Write("*"); 
+            }
+            Console.WriteLine(); 
         }
     }
 }
