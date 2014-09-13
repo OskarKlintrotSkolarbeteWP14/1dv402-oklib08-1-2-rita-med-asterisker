@@ -61,6 +61,15 @@ namespace _1_2_rita_med_asterisker {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ange det udda antalet asterisker (max {0}) i diamantens midja: .
+        /// </summary>
+        internal static string Asterisk_Prompt {
+            get {
+                return ResourceManager.GetString("Asterisk_Prompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tryck valfri tangent för att fortsätta - Avsluta med Esc.
         /// </summary>
         internal static string Continue_Prompt {
@@ -70,7 +79,7 @@ namespace _1_2_rita_med_asterisker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FEL! Det inmatade värdet är inte ett udda heltal mellan 1 och {0}..
+        ///   Looks up a localized string similar to FEL! Det inmatade värdet är inte ett udda heltal mellan 1 och {0}, försök igen!.
         /// </summary>
         internal static string Error_Message {
             get {

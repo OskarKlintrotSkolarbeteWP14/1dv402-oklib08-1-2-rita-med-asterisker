@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Asterisk_Prompt" xml:space="preserve">
+    <value>Ange det udda antalet asterisker (max {0}) i diamantens midja: </value>
+  </data>
   <data name="Continue_Prompt" xml:space="preserve">
     <value>Tryck valfri tangent för att fortsätta - Avsluta med Esc</value>
   </data>
   <data name="Error_Message" xml:space="preserve">
-    <value>FEL! Det inmatade värdet är inte ett udda heltal mellan 1 och {0}.</value>
+    <value>FEL! Det inmatade värdet är inte ett udda heltal mellan 1 och {0}, försök igen!</value>
   </data>
 </root>

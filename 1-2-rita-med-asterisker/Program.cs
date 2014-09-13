@@ -11,10 +11,13 @@ namespace _1_2_rita_med_asterisker
         static void Main(string[] args)
         {
             Console.Title = "Rita med asterisker - nivå C";
+
+            byte maxValue = 79;
             
             do
             {
                 Console.Clear();
+                ReadOddByte(Strings.Asterisk_Prompt, maxValue);
                 
             } while (IsContinuing());
         }
@@ -25,10 +28,30 @@ namespace _1_2_rita_med_asterisker
             return esc.Key != ConsoleKey.Escape;
 
         }
-        //private static byte ReadOddByte(string prompt = null, byte maxValue = 255)
-        //{
-
-        //}
+        private static byte ReadOddByte(string prompt = null, byte maxValue = 255)
+        {
+            byte readValue = 0;
+            while (true)
+            {
+                try
+                {
+                    Console.Write(prompt, maxValue);
+                    byte checkValue = byte.Parse(Console.ReadLine());
+                    if (checkValue > maxValue || (checkValue % 2 == 0))
+                        throw new OverflowException();
+                    readValue = checkValue;
+                    Console.WriteLine(readValue);
+                    break;
+                }
+                catch (Exception)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(Strings.Error_Message, maxValue);
+                    Console.ResetColor();
+                }
+            }
+            return readValue;
+        }
         private static void RenderDiamond(byte maxCount)
         {
 
