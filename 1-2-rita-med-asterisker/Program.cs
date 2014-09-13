@@ -10,7 +10,7 @@ namespace _1_2_rita_med_asterisker
     {
         static void Main(string[] args)
         {
-            Console.Title = "Rita med asterisker - nivå C";
+            Console.Title = Strings.Console_Title;
 
             byte maxValue = 79;
             

@@ -70,6 +70,15 @@ namespace _1_2_rita_med_asterisker {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rita med asterisker - nivå C.
+        /// </summary>
+        internal static string Console_Title {
+            get {
+                return ResourceManager.GetString("Console_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tryck valfri tangent för att fortsätta eller avsluta med Esc.
         /// </summary>
         internal static string Continue_Prompt {
